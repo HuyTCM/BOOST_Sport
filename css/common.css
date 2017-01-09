@@ -1,0 +1,10 @@
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default {
+    border: 0;
+}
+.navbar-inverse {
+    border: 0;
+    border-radius: 0;
+}
