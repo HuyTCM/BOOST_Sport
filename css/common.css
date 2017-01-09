@@ -1,10 +1,67 @@
-.navbar {
-    margin-bottom: 0;
+.bg-black{
+    color:#fff;
+    background-color:#000;
+}
+.bg-yellow{
+    color:#000;
+    background-color: yellow;
+}
+.btn-link {
+    color:#fff;
+    padding: 0;
+}
+.btn-link:hover {
+    text-decoration: none;
+}
+.color-yellow {
+    color: yellow
+}
+.upper-header-center {
+    padding-top: 17px;
+}
+#location .btn-group {
+    float: right;
+    margin-right: 20px;
 }
 .navbar-default {
-    border: 0;
+    background-color: yellow;
+    color:#000;
+    border-color: yellow;
 }
-.navbar-inverse {
-    border: 0;
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar {
+    min-height: auto;
+    max-height: auto;
+    height: auto;
     border-radius: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.navbar-nav > li {
+    margin-right: 3px;
+}
+.navbar-nav > li > a.page-nav { 
+    padding: 12px 50px;
+}
+.navbar-nav > li > a.func-nav { 
+    font-size: 14px;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+    color: yellow;
+    background-color: #000;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: yellow;
+    background-color: #000;
 }
