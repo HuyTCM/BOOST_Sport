@@ -1,3 +1,9 @@
+body {
+    overflow-x: hidden;
+}
+.upper-header {
+    height: 52px;
+}
 .bg-black{
     color:#fff;
     background-color:#000;
@@ -64,4 +70,133 @@
 .navbar-default .navbar-nav > .active > a:focus {
     color: yellow;
     background-color: #000;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+.fab-carousel-caption {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+}
+.fab-carousel-caption > h1,
+.fab-carousel-caption > span {
+    font-weight: 900;
+    color: #fff;
+}
+.fab-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.fab-btn:focus,
+.fab-btn:active {
+    outline: none;
+}
+.fab-btn-default {
+    background-color: transparent;
+    color: yellow;
+    border: 1px solid yellow;
+}
+.fab-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.fab-no-padding {
+    padding: 0;
+}
+.fab-no-margin {
+    margin: 0;
+}
+.fab-sex {
+    position: relative;
+}
+.fab-sex:hover {
+    cursor: pointer;
+}
+.fab-sex > .fab-sex-name,
+.categories .fab-categories-name {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #FFF;
+   font-weight: 900;
+   font-size: 80px;
+   text-align: center;
+}
+.categories .fab-categories-name > h1 {
+    font-weight: 900;
+}
+.fab-categories-name-left > h1 {
+    font-weight: 900;
+}
+.fab-categories-name-left > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20%;
+    font-size: 60px;
+ }
+.fab-categories-name-bottom {
+    position: absolute;
+    bottom: 12%;
+    left: 23%;
+    color: #fff;
+
+}
+.fab-categories-name-bottom i {
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    font-size: 49px;
+}
+.categories .shoes,
+.categories .apparel {
+    height: 323.385px;
+}
+.categories .shoes img {
+    position: absolute;
+    bottom: -30px;
+    z-index: -1;
+}
+.categories .apparel .men-apparel,
+.categories .apparel .women-apparel {
+    height: 323.385px;
+    background-repeat: no-repeat;
+}
+.categories .apparel .men-apparel {
+    background-image: url('../images/home-men-apparel.jpg');
+    background-size: 600px;
+}
+.categories .apparel .women-apparel {
+    background-image: url('../images/home-women-apparel.jpg');
+    background-size: 444px;
+}
+.fab-categories-name-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
 }

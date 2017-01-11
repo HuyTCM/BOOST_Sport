@@ -6316,8 +6316,8 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  bottom: 50%;
   left: 0;
   width: 15%;
   font-size: 20px;
