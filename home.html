@@ -9,6 +9,8 @@
     <title>BOOST_SportShop</title>
     <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
     <link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="lib/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
 </head>
@@ -16,39 +18,39 @@
 <body>
     <header>
         <div class="upper-header bg-black">
-            <div class="container-fluid row">
-                <div id="logo" class="col-md-3">
-                    <img src="./images/logo_with_slogan.jpg" class="img-responsive" alt="logo">
-                </div>
-                <div id="location" class="col-md-3 upper-header-center">
-                    <div class="btn-group">
-                        <button class="btn btn-link dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false">
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="col-md-3">
+                    </div>
+                    <div id="location" class="col-md-3 upper-header-center">
+                        <div class="btn-group">
+                            <button class="btn btn-link dropdown-toggle text-uppercase" data-toggle="dropdown" aria-expanded="false">
                             <b>HO CHI MINH</b>
                             <i class="fa fa-caret-down color-yellow"></i>
 						</button>
-                        <ul class="pull-right dropdown-menu">
-                            <li>
-                                <a tabindex="-1" href="#">English</a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="#">French</a>
-                            </li>
-                        </ul>
+                            <ul class="pull-right dropdown-menu">
+                                <li>
+                                    <a tabindex="-1" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" href="#">French</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div id="hotline" class="col-md-3 upper-header-center">
-                    <b>HOTLINE</b> <span class="color-yellow"><b>1900 165 165</b></span>
-                </div>
-                <div id="search" class="col-md-3 upper-header-center">
-                    <span class="glyphicon glyphicon-search color-yellow"></span>
-                    <input type="text" name="search">
+                    <div id="hotline" class="col-md-3 upper-header-center">
+                        <b>HOTLINE</b> <span class="color-yellow"><b>1900 165 165</b></span>
+                    </div>
+                    <div id="search" class="col-md-3 upper-header-center">
+                        <span class="glyphicon glyphicon-search color-yellow"></span>
+                        <input type="text" name="search">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="lower-header">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid row">
-                    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="lower-header bg-yellow">
+            <div class="container">
+                <nav class="navbar navbar-default">
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
@@ -90,21 +92,17 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
             <div class="item active">
@@ -125,6 +123,7 @@
                 <div class="fab-carousel-caption">
                     <h1>NEW YEAR.</h1>
                     <h1>NEW BRA.</h1>
+                    <br>
                     <span>Our favourite bras for any way</span> <br>
                     <span>you move in the new year.</span> <br>
                     <br>
@@ -146,7 +145,6 @@
 
         </div>
 
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -157,32 +155,33 @@
         </a>
     </div>
     <div class="sexes">
-        <div class="row">
+        <div class="row fab-no-margin">
             <div class="col-md-4 fab-no-padding">
-                <div class="fab-sex">
-                    <img src="images/cate1.jpg" class="img-responsive" alt="Men">
+                <div id="sex-men" class="fab-sex">
                     <h1 class="fab-sex-name">Men</h1>
                 </div>
             </div>
             <div class="col-md-4 fab-no-padding">
-                <div class="fab-sex">
-                    <img src="images/cate2.jpg" class="img-responsive" alt="Women">
+                <div id="sex-women" class="fab-sex">
                     <h1 class="fab-sex-name">Women</h1>
                 </div>
             </div>
             <div class="col-md-4 fab-no-padding">
-                <div class="fab-sex">
-                    <img src="images/cate3.jpg" class="img-responsive" alt="Kid">
+                <div id="sex-kid" class="fab-sex">
                     <h1 class="fab-sex-name">Kids</h1>
                 </div>
             </div>
         </div>
     </div>
+    <div id="logo-ads">
+        <img src="images/home-logo.png" class="img-responsive" width="100%" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus. </p>
+    </div>
     <div class="categories">
-        <div class="row">
+        <div class="row fab-no-margin">
             <div class="col-md-8 row fab-no-padding fab-no-margin">
-                <div class="shoes col-md-12 row fab-no-padding fab-no-margin">
-                    <img src="images/home-shoes.jpg" alt="Shoes" class="img-responsive">
+                <div id="cate-shoes" class="category col-md-12 fab-no-padding">
                     <div class="fab-categories-name-left">
                         <h1 class="fab-no-margin">SHOES</h1>
                         <span>Lorem ipsum dolor sit amet,</span> <br>
@@ -191,33 +190,226 @@
                     </div>
                 </div>
                 <div class="apparel col-md-12 row fab-no-padding fab-no-margin">
-                    <div class="men-apparel col-md-6 fab-no-padding">
+                    <div id="cate-men-apparel" class="category col-md-6 fab-no-padding">
                         <div class="fab-categories-name">
                             <h1 class="fab-no-margin">MEN</h1>
                             <h1 class="fab-no-margin">APPAREL</h1>
                             <i class="fa fa-angle-down"></i>
                         </div>
                     </div>
-                    <div class="women-apparel col-md-6 fab-no-padding">
+                    <div id="cate-women-apparel" class="category col-md-6 fab-no-padding">
                         <div class="fab-categories-name">
-                            <h1 class="fab-no-margin color-yellow">WOMEN</h1>
-                            <h1 class="fab-no-margin color-yellow">APPAREL</h1>
-                            <i class="fa fa-angle-down color-yellow"></i>
+                            <h1 class="fab-no-margin">WOMEN</h1>
+                            <h1 class="fab-no-margin">APPAREL</h1>
+                            <i class="fa fa-angle-down"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 fab-no-padding">
-                <img src="images/home-accessories.jpg" alt="accessories" class="img-responsive">
-                <div class="fab-categories-name-bottom">
-                    <h1 class="fab-no-margin">ACCESSORIES</h1>
-                    <i class="fa fa-angle-down"></i>
+                <div id="cate-accessories" class="category">
+                    <div class="fab-categories-name-bottom">
+                        <h1 class="fab-no-margin">ACCESSORIES</h1>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="items-slide">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="img-responsive" src="images/home-shoes-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive bags" src="images/home-bags-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/home-apparel-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/home-shoes-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive bags" src="images/home-bags-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/home-apparel-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/home-shoes-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive bags" src="images/home-bags-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/home-apparel-slide.jpg" alt="">
+                <div class="item-caption">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+        </div>
+        <a class="customNavigation prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="customNavigation next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="never-follow">
+        <div class="fab-img-overlay">
+            <div class="fab-img-overlay-caption">
+                <h1 class="fab-no-margin">NEVER</h1>
+                <h1 class="fab-no-margin">FOLLOW</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus</p>
+            </div>
+        </div>
+        <img src="images/never-follow.jpg" class="img-responsive" alt="Never Follow">
+    </div>
+    <div id="logo-ads2">
+        <img src="images/home-logo2.png" class="img-responsive" width="100%" alt="">
+    </div>
+    <div id="last">
+        <div class="row fab-no-margin">
+            <div id="last-shoes" class="col-md-6 fab-no-padding">
+                <div class="last-shoes-caption">
+                    <h1>HEADING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus.</p>
+                </div>
+            </div>
+            <div id="last-ath" class="col-md-3 fab-no-padding">
+
+            </div>
+            <div id="last-session" class="col-md-3 fab-no-padding">
+                <div class="last-session-caption">
+                    <h1>HEADING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat tellus. Nam eget dictum
+                        nisi. Aliquam quis magna quis libero ullamcorper posuere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signup">
+        <div class="row fab-no-margin">
+            <div class="col-md-6 msg">
+                <h1>NEVER MISS ANOTHER WORKOUT!</h1>
+                <h1>Subscribe today!</h1>
+            </div>
+            <div class="col-md-6 signup-form">
+                EMAIL*: <input type="text"> <button class="fab-btn fab-btn-dark">SIGN UP!</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="info">
+            <div class="container">
+                <div class="row fab-no-margin">
+                    <div class="col-md-2">
+                        <div class="devider"></div>
+                        <div class="info-item">
+                            <h3>About us</h3>
+                            <p>Company Information</p>
+                            <p>Careers</p>
+                            <p>News</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Support</h3>
+                            <p>FAQ</p>
+                            <p>Store Location</p>
+                            <p>Account</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 country">
+                        Vietnam
+                    </div>
+                    <div class="col-md-4 networks">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="col-md-4 hotline">
+                        HOTLINE <span class="color-yellow">1900 165 165</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="lib/jquery-1.12.4-dist/jquery.min.js"></script>
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var owl = $("#owl-demo");
+
+            owl.owlCarousel({
+                items: 3, //10 items above 1000px browser width
+                itemsDesktop: [1000, 3], //5 items between 1000px and 901px
+                itemsDesktopSmall: [900, 2], // betweem 900px and 601px
+                itemsTablet: [600, 1], //2 items between 600 and 0
+                itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+                pagination: false
+            });
+            owl.trigger('owl.play', 3000);
+
+            // Custom Navigation Events
+            $(".next").click(function () {
+                owl.trigger('owl.next');
+            });
+            $(".prev").click(function () {
+                owl.trigger('owl.prev');
+            });
+        });
+    </script>
 </body>
 
 </html>

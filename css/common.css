@@ -1,14 +1,17 @@
-body {
-    overflow-x: hidden;
-}
 .upper-header {
     height: 52px;
 }
-.bg-black{
+#logo {
+    background-image: url('../images/logo_with_slogan.jpg');
+    background-size: 100% auto;
+    background-position: left center;
+    height: 52px;
+}
+.bg-black {
     color:#fff;
     background-color:#000;
 }
-.bg-yellow{
+.bg-yellow {
     color:#000;
     background-color: yellow;
 }
@@ -78,13 +81,16 @@ body {
 }
 .fab-carousel-caption {
     position: absolute;
-    top: 2%;
+    top: 4%;
     left: 4%;
 }
 .fab-carousel-caption > h1,
 .fab-carousel-caption > span {
     font-weight: 900;
     color: #fff;
+}
+.fab-carousel-caption > h1 {
+    margin: 0;
 }
 .fab-btn {
     display: inline-block;
@@ -115,6 +121,10 @@ body {
     color: yellow;
     border: 1px solid yellow;
 }
+.fab-btn-dark {
+    background-color: #000;
+    color: yellow;
+}
 .fab-img-overlay {
     position: absolute;
     top: 0;
@@ -123,11 +133,25 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
 }
+.fab-img-overlay > .fab-img-overlay-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.fab-img-overlay > .fab-img-overlay-caption > h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
 .fab-no-padding {
     padding: 0;
 }
 .fab-no-margin {
     margin: 0;
+}
+.sexes {
+    color: #fff;
 }
 .fab-sex {
     position: relative;
@@ -135,13 +159,70 @@ body {
 .fab-sex:hover {
     cursor: pointer;
 }
+#sex-men,
+#sex-women,
+#sex-kid {
+    height: 299px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sex-men {
+    background-image: url(../images/home-men.jpg);
+    background-position: 0px -1px;
+    background-size: 101% 101%;
+}
+#sex-men:hover {
+    background-image: url(../images/home-men-hover.jpg);
+}
+#sex-women {
+    background-image: url(../images/home-women.jpg);
+}
+#sex-women:hover {
+     background-image: url(../images/home-women-hover.jpg);
+}
+#sex-kid {
+    background-image: url(../images/home-kid.png);
+}
+#sex-kid:hover {
+     background-image: url(../images/home-kid-hover.jpg);
+}
+.category {
+    color: #fff;
+}
+.category:hover {
+    color: yellow !important;
+}
+#cate-shoes {
+    color: #000;
+    height: 315.5px;
+    background-image: url(../images/home-shoes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0;
+}
+#cate-accessories {
+    height: 631px;
+    background-image: url(../images/home-accessories.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#cate-men-apparel {
+    height: 315.5px;
+    background-image: url('../images/home-men-apparel.jpg');
+    background-size: 137% auto;
+    background-position: 0 17%;
+}
+#cate-women-apparel {
+    height: 315.5px;
+    background-image: url('../images/home-women-apparel.jpg');
+    background-size: 100% auto;
+}
 .fab-sex > .fab-sex-name,
 .categories .fab-categories-name {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   color: #FFF;
    font-weight: 900;
    font-size: 80px;
    text-align: center;
@@ -163,7 +244,6 @@ body {
     position: absolute;
     bottom: 12%;
     left: 23%;
-    color: #fff;
 
 }
 .fab-categories-name-bottom i {
@@ -171,10 +251,6 @@ body {
     left: 50%;
     bottom: 0;
     font-size: 49px;
-}
-.categories .shoes,
-.categories .apparel {
-    height: 323.385px;
 }
 .categories .shoes img {
     position: absolute;
@@ -186,17 +262,197 @@ body {
     height: 323.385px;
     background-repeat: no-repeat;
 }
-.categories .apparel .men-apparel {
-    background-image: url('../images/home-men-apparel.jpg');
-    background-size: 600px;
-}
-.categories .apparel .women-apparel {
-    background-image: url('../images/home-women-apparel.jpg');
-    background-size: 444px;
-}
 .fab-categories-name-left {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
+}
+#logo-ads {
+    position: relative;
+}
+#logo-ads > p:first-of-type {
+    color: #fff;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%)
+}
+#logo-ads > p:nth-of-type(2) {
+    color: #fff;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translateY(-50%)
+}
+#items-slide {
+    position: relative;
+}
+#items-slide .item {
+    position: relative;
+}
+#items-slide img.bags {
+    position: relative;
+    top: -50px;
+}
+#items-slide .item > .item-caption {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#items-slide .item > .item-caption > p {
+    text-align: justify;
+}
+a.customNavigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #000;
+}
+a.customNavigation:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+a.customNavigation span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+a.customNavigation.prev {
+    left: 0;
+}
+a.customNavigation.next {
+    right: 0;
+}
+#never-follow {
+    position: relative;
+}
+#never-follow img {
+    width: 100%;
+}
+#never-follow .fab-img-overlay {
+    right: 64%;
+    background-color: rgba(255, 255, 0, 0.2);
+}
+#last-shoes {
+    height: 424px;
+    position: relative;
+    background-image: url(../images/air-jordan-31-chicago-bulls-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: right center;
+}
+#last-shoes > .last-shoes-caption {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#last-shoes > .last-shoes-caption h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+#last-shoes > .last-shoes-caption p {
+    width: 200px;
+    text-align: justify;
+}
+#last-ath {
+    height: 424px;
+    background-image: url('../images/nike-innovation-2016-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#last-session {
+    position: relative;
+    height: 424px;
+    background-image: url('../images/yeezy-season-3-price-list-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 24% center;
+}
+#last-session > .last-session-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: yellow;
+    width: 70%;
+    text-align: justify;
+}
+#signup {
+    height: 110px;
+    line-height: 100px;
+    background-color: yellow;
+}
+#signup h1 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #000;
+}
+#signup .msg {
+    text-align: center;
+}
+#signup .signup-form {
+    color: #000;
+    font-weight: 900;
+    font-size: 28px;
+}
+#signup .signup-form input {
+    line-height: 30px;
+}
+#signup .signup-form button {
+         font-weight: 900;
+    font-size: 17px;
+}
+footer {
+    font-size: 12px;
+}
+footer .info {
+    color: #fff;
+    background-color: #212121;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.info-item h3 {
+    font-weight: 900;
+    text-align: center;
+}
+.devider {
+    position: absolute;
+    height: 200px;
+    border: 1px solid #9E9E9E;
+    border-radius: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .social {
+    background-color: #9E9E9E;
+}
+footer .social {
+    padding: 10px 0;
+}
+footer .social .networks {
+    font-size: 24px;
+    text-align: center;
+}
+footer .social .networks > i {
+    margin: 0 20px;
+}
+footer .social .hotline,
+footer .social .country {
+    font-weight: 900;
+    margin-top: 10px;
 }
