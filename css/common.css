@@ -456,3 +456,56 @@ footer .social .country {
     font-weight: 900;
     margin-top: 10px;
 }
+#shop-menu {
+    display: none;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 96px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    z-index: 9999;
+}
+.menu-categories {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.menu-categories > .row {
+    padding-left: 16.6%;
+}
+.menu-category {
+    cursor: pointer;
+    text-align: center;
+}
+.menu-category.active > h4 {
+    color: yellow;
+}
+.menu-category:hover {
+    color: yellow;
+}
+.menu-category > h4 {
+    font-weight: 900;
+}
+.menu-items {
+    padding-left: 19%;
+}
+.menu-item {
+    position: relative;
+    height: 300px;
+}
+.menu-item > h4 {
+    font-weight: 900;
+}
+.menu-item > a {
+    display: block;
+    color: #fff;
+}
+.menu-item > a:hover {
+    color: yellow;
+}
+.menu-item > .menu-item-all {
+    position: absolute;
+    bottom: 0;
+}
