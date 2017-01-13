@@ -21,12 +21,12 @@ $(document).ready(function () {
     });
 
     $('#nav-shop').hover(function () {
-        $('#nav-shop').parent().addClass('active')
+        $('#nav-shop').parent().addClass('hover-active')
         $('#shop-menu').css('display', 'block');
     });
-    $(document).on('mousemove', function(e) {
-        if(e.target.id !== 'nav-shop' && !$(e.target).closest('#shop-menu')[0]) {
-            $('#nav-shop').parent().removeClass('active')
+    $(document).on('mousemove', function (e) {
+        if (e.target.id !== 'nav-shop' && !$(e.target).closest('#shop-menu')[0]) {
+            $('#nav-shop').parent().removeClass('hover-active')
             $('#shop-menu').css('display', 'none');
         }
     });

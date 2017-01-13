@@ -1,0 +1,83 @@
+#shop-top-banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #BDBDBD;
+    color: #000;
+}
+#shop-top-banner > .caption {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#shop-top-banner > .caption > h1 {
+    color: #fff;
+    font-weight: 900;
+}
+#shop-menus {
+    border: 1px solid #BDBDBD;
+    padding: 10px 20px 10px 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#shop-menus > .header {
+    border-bottom: 1px solid #BDBDBD;
+}
+#shop-menus > .menu {
+    margin-bottom: 20px;
+}
+#shop-menus > .menu.last {
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 20px;
+}
+#shop-menus > .menu > a {
+    display: block;
+    color: #000;
+    margin-left: 20px;
+}
+#shop-menus > .menu > a:hover {
+    color: yellow;
+}
+#shop-items {
+    padding-top: 20px;
+}
+#shop-items .item-card {
+    height: 200px;
+    background-color: #BDBDBD;
+    margin-bottom: 20px;
+}
+#sort-by {
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+#sort-by > .name {
+    display: inline-block;
+    border: 1px solid #BDBDBD;
+    padding: 5px;
+}
+#sort-by > .name > select {
+    border: none;
+    background: none;
+}
+#table-size {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BDBDBD;
+}
+#table-size > table td,
+#table-colour > table td {
+    width: 15%;
+    text-align: center;
+}
+#table-colour {
+    padding-bottom: 20px;
+}
+#table-colour > table td {
+    padding: 5px;
+}
+#table-colour > table td > .circle-colour {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    margin: auto;
+}
