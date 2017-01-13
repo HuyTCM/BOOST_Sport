@@ -15,6 +15,28 @@
     color:#000;
     background-color: yellow;
 }
+.bg-white {
+    color:#000;
+    background-color: #fff;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-grey {
+    background-color: grey;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-orange {
+    background-color: orange;
+}
+.bg-purple {
+    background-color: purple;
+}
 .btn-link {
     color:#fff;
     padding: 0;
@@ -508,4 +530,8 @@ footer .social .country {
 .menu-item > .menu-item-all {
     position: absolute;
     bottom: 0;
+}
+.hover-active > a {
+    color: yellow !important;
+    background-color: #000 !important;
 }
