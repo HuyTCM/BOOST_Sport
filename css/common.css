@@ -538,3 +538,36 @@ footer .social .country {
     color: yellow !important;
     background-color: #000 !important;
 }
+.info-item > h4 {
+    text-align: center;
+}
+.info-item > p {
+    margin: 0;
+}
+.footer-table > tr {
+    height: 60px;
+}
+.find-the-store-btn {
+    border: solid yellow 2px;
+    color: yellow;
+    padding: 10px;
+    margin-right: 5px;
+    font-weight: bold;
+    /*font-size: 18px;*/
+    width: auto;
+}
+.email-us-btn {
+    border: solid white 2px;
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    /*font-size: 18px;*/
+    width: auto;
+}
+.text-something-footer {
+    width: 100%;
+    border: 1px white solid;
+    background-color: #0f0f0f;
+    padding: 5px;
+}
