@@ -515,6 +515,10 @@ footer .social .country {
 }
 .menu-items {
     padding-left: 19%;
+    display: none;
+}
+.menu-items.active {
+    display: block;
 }
 .menu-item {
     position: relative;

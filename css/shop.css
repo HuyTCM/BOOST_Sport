@@ -45,6 +45,11 @@
     height: 200px;
     background-color: #BDBDBD;
     margin-bottom: 20px;
+    text-align: center;
+}
+.item-card > img {
+    max-width: 100%;
+    max-height: 100%;
 }
 #sort-by {
     text-align: right;

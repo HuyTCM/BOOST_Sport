@@ -29,5 +29,24 @@ $(document).ready(function () {
             $('#nav-shop').parent().removeClass('hover-active')
             $('#shop-menu').css('display', 'none');
         }
+        if (e.target.id === 'men-menu') {
+            $('.menu-items').removeClass('active');
+            $('.menu-category').removeClass('active');
+            $('#men-items').addClass('active');
+            $('#men-menu').addClass('active');
+        }
+        if (e.target.id === 'women-menu') {
+            $('.menu-items').removeClass('active');
+            $('.menu-category').removeClass('active');
+            $('#women-items').addClass('active');
+            $('#women-menu').addClass('active');
+        }
+        if (e.target.id === 'kid-menu') {
+            $('.menu-items').removeClass('active');
+            $('.menu-category').removeClass('active');
+            $('#kid-items').addClass('active');
+            $('#kid-menu').addClass('active');
+        }
     });
+
 });
