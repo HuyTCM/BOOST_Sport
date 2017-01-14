@@ -17,6 +17,8 @@
             socks:[]
         },
         apparel:{
+            sportbra: [],
+            tanktop: [],
             tshirt:[],
             shorts:[],
             hoodie:[],
