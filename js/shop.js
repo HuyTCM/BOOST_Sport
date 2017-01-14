@@ -13,6 +13,7 @@
         var id = findGetParameter('id');
         var category = findGetParameter('category');
         var type = findGetParameter('type');
+        var url = '?id=' +id+ '&category='+category+'&type='+type;
 
         var model;
         var imgPath = 'images/';
@@ -32,6 +33,7 @@
             } else {
                 model = KID_ITEMS.girl;
             }
+            url += '&gender='+gender;
             imgPath += 'kid/';
         }
 
@@ -49,7 +51,7 @@
         }
 
         if (items) {
-            appendItems(items, imgPath);
+            appendItems(items, imgPath, url);
         }
     }
 
@@ -65,14 +67,15 @@
         return categories[type];
     }
 
-    function appendItems(items, imgPath) {
+    function appendItems(items, imgPath, url) {
         // fill items
         var listItem = $('#list-items-row');
         for (var i = 0; i < items.length; i++) {
             var item = items[i];
             var imgSrc = imgPath + item.img[0].src;
             var itemDiv = $("<div class='col-md-4'></div>");
-            var itemHref = $("<a href='detail.html'></a>");
+            var itemHref = $("<a></a>");
+            itemHref.attr('href', 'detail.html' + url + '&index=' + i);
             var itemDivCard = $("<div class='item-card'></div>");
             var itemImg = $("<img>");
 
