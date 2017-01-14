@@ -28,13 +28,16 @@
         } else if (id == 3) {
             // kid
             var gender = findGetParameter('gender');
+            imgPath += 'kid/';
             if (gender == 1) {
                 model = KID_ITEMS.boy;
+                imgPath += 'boy/';
             } else {
                 model = KID_ITEMS.girl;
+                imgPath += 'girl/';
             }
             url += '&gender='+gender;
-            imgPath += 'kid/';
+
         }
 
         var categories;

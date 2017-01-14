@@ -9,7 +9,24 @@ var KID_ITEMS = {
             soccer: [],
             tennis: [],
             training: [],
-            running: [],
+            running: [
+                {
+                    name:"GEL-CONTEND 3 GS",
+                    branch:"ASICS",
+                    shortDesc:"",
+                    price:'890.000',
+                    color:"CARBON/WHITE/ORANGE",
+                    description: "",
+                    img: [
+                        {
+                            src:'RUNNING_ASICS_1.jpg'
+                        },
+                        {
+                            src:'RUNNING_ASICS_2.jpg'
+                        }
+                    ]
+                }
+            ],
             sandals: []
         },
         accessories: {
