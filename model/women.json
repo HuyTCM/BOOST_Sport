@@ -1,0 +1,25 @@
+{
+  "men": {
+    "shoes" : {
+      "soccer":[
+      ],
+      "tennis":[],
+      "training":[],
+      "running":[],
+      "sandals":[]
+    },
+    "accessories": {
+      "bags":[],
+      "hats":[],
+      "socks":[]
+    },
+    "apparel":{
+      "tshirt":[],
+      "shorts":[],
+      "hoodies":[],
+      "jackets":[],
+      "pants":[],
+      "joggers":[]
+    }
+  }
+}
