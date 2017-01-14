@@ -56,15 +56,34 @@
     }
 
     function getShoes(categories, type) {
+        if (type === 'all') {
+            return getAll(categories);
+        }
         return categories[type];
     }
 
     function getApparel(categories, type) {
+        if (type === 'all') {
+            return getAll(categories);
+        }
         return categories[type];
     }
 
     function getAccessories(categories, type) {
+        if (type === 'all') {
+            return getAll(categories);
+        }
         return categories[type];
+    }
+
+    function getAll(categories) {
+        var items = [];
+        $.each(categories, function( index, category ) {
+            $.each(category, function( i, item ) {
+                items.push(item);
+            });
+        });
+        return items;
     }
 
     function appendItems(items, imgPath, url) {

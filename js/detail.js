@@ -34,7 +34,10 @@
             imgPath += 'kid/';
         }
 
-        var item = model[category][type][index];
+        if (type==='all') {
+
+        }
+        var item = type==='all' ? getAll(model[category])[index] : model[category][type][index];
         showData(item, imgPath);
     }
 
@@ -48,5 +51,14 @@
         $('#product-shortDesc').text(item.shortDesc);
         $('#product-price').text(item.price);
         $('#product-color').text(item.color);
+    }
+    function getAll(categories) {
+        var items = [];
+        $.each(categories, function( index, category ) {
+            $.each(category, function( i, item ) {
+                items.push(item);
+            });
+        });
+        return items;
     }
 }).call();
