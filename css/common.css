@@ -570,6 +570,7 @@ footer .social .country {
     width: auto;
 }
 .text-something-footer {
+    height: 100%;
     width: 100%;
     border: 1px white solid;
     background-color: #0f0f0f;
