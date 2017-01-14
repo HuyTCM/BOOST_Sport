@@ -1,7 +1,7 @@
 /**
  * Created by HuyTCM on 1/14/17.
  */
-(function () {
+// (function () {
 
     var WOMEN_ITEM = {
         shoes : {
@@ -24,6 +24,6 @@
             pants:[],
             joggers:[]
         }
-    }
+    };
 
-}).call();
+// }).call();

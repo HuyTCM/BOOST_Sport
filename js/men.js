@@ -1,7 +1,7 @@
 /**
  * Created by HuyTCM on 1/14/17.
  */
-(function () {
+// (function () {
 
     var MEN_ITEM = {
         shoes : {
@@ -400,6 +400,6 @@
                 }
             ]
         }
-    }
+    };
 
-}).call();
+// }).call();
